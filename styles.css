@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,900');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.divider-small {
+  height: 5px;
+  border: 0;
+  width: 10em;
+  color: #e22f00;
+  background-color: #e22f00;
+  margin-bottom: 3em;
+}
+
+.divider-verysmall {
+  height: 5px;
+  border: 0;
+  width: 10em;
+  color: #e22f00;
+  background-color: #e22f00;
+  margin-bottom: 3em;
+}
+
+.container{
+  max-height: 70em;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* typography
+=======================================*/
+h1 {
+  font-size: 1.75em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin: 0.75em;
+  line-height: 1.75em;
+}
+
+strong{
+  font-weight: 600;
+}
+
+.title {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.light {
+  font-weight: 300;
+}
+
+@media (min-width: 900px) {
+  p{
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* navigation
+=======================================*/
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.25em 0.25em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+nav a:hover, nav a:focus {
+  color: #a3a3a3;
+}
+
+@media (max-width: 340px) {
+  nav a {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 1300px) {
+  nav a {
+    font-size: 1em;
+  }
+
+  nav ul{
+    margin-right: 15em;
+    margin-top: 2em;
+  }
+}
+
+/* buttons
+=======================================*/
+.button {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0.75em 2em;
+  margin: 0.75em;
+}
+
+.botton:hover,
+.button:focus {
+  background: #000;
+  color: #FFF;
+}
+
+@media (min-width: 900px) {
+  .button{
+    padding: 0.5em 4em;
+    font-size: 1.75em;
+  }
+
+  .button-small{
+    padding: 0.75em 0.75em;
+    font-size: 0.75em;
+  }
+}
+
+.button-accent {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.botton-accent:hover,
+.button-accent:focus {
+  background: #FFF;
+  color: #000;
+}
+
+.button-yellow {
+  color: #ffd600;
+  border-color: #ffd600;
+}
+
+.botton-yellow:hover,
+.button-yellow:focus {
+  background: #ffd600;
+  color: #000;
+}
+
+.button-small {
+  padding: 0.75em 1em;
+  font-size: 0.75em;
+}
+
+/* header
+=======================================*/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.logo {
+  max-height: 6em;
+}
+
+@media (min-width: 720px) {
+  .logo {
+    float: left;
+  }
+
+  nav ul {
+    float: right;
+  }
+}
+
+@media (min-width: 900px) {
+  .logo {
+    max-height: 7em;
+  }
+}
+
+@media (min-width: 1300px) {
+  .logo {
+    max-height: 10em;
+    margin-left: 15em;
+  }
+}
+
+/* head hero
+=======================================*/
+.head-hero {
+  background-image: url('img/head-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 15em 0;
+}
+
+@media (min-width: 900px) {
+  .head-hero {
+    padding: 21em 5em;
+  }
+}
+
+/* mission
+=======================================*/
+.mission-textbox {
+  color: #FFF;
+  background-color: #222222;
+  outline-color: #ffb000;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -1.25em;
+  padding: 1.75em;
+  margin-bottom: 4em;
+
+}
+
+.mission-textbox h1{
+  color: #ffb000;
+}
+
+@media (min-width: 600px) {
+  .home-about{
+    margin-top: 5em;
+    margin-left: 5em;
+    background-image: url('img/our-mission.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+    margin-bottom: 5em;
+  }
+
+  .mission-textbox {
+    width: 28em;
+    margin-top: -5em;
+    box-shadow: 0 0 3em 0 #222222;
+  }
+}
+
+/* portfolio
+=======================================*/
+.portfolio{
+  margin: 5em 0;
+}
+
+.project{
+  margin: 3em;
+  position: relative;
+}
+
+.project-info{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 50%;
+  color: #FFF;
+  background: rgba(22, 22, 22, 0.8);
+  padding: 1em;
+  padding-bottom: 2em;
+}
+/*------------------------------------------------*/
+.project-small-first{
+  margin-top: 2em;
+}
+/*------------------------------------------------*/
+
+@media (min-width: 600px) {
+  .portfolio{
+    margin: 0;
+    padding: 0 15%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .project{
+    width: 45%;
+    margin: 0;
+    display: inline-grid;
+  }
+
+  .project-small {
+    width: 30%;
+    display: inline-grid;
+  }
+
+  .project-info{
+    visibility: hidden;
+  }
+
+  .project:hover .project-info{
+    visibility: visible;
+  }
+}
+
+/* call to action
+=======================================*/
+.cta{
+  margin-top: 5em;
+  background-image: url('img/difference.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15em 1em;
+}
+
+.cta h1{
+  margin-bottom: 3em;
+}
+
+/* sponsors
+=======================================*/
+.sponsors{
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.sponsor-item{
+  width: 6em;
+  margin: 1em 2em;
+  display: inline-grid;
+}
+
+@media (max-width: 400px) {
+  .sponsor-item{
+    margin: 1em 0.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .sponsor-item{
+    margin: 1em 3em;
+  }
+}
+
+/* footer
+=======================================*/
+footer{
+  background-color: #111111;
+  color: #FFF;
+  margin: 0;
+  padding: 5em;
+}
+
+footer p{
+  line-height: 1.3em;
+  text-align: left;
+}
