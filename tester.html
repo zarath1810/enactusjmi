@@ -11,7 +11,100 @@
 </head>
 
 <body>
-    <div class="hero"></div>    
+<style type="text/css">
+            .banner{
+            background: linear-gradient(#ffd700,#ff9e00);
+            padding: 5em 2em 2em 2em;
+            text-align: left;
+            line-height: 0;
+        }
+
+        .spacer {
+            padding: 1em;
+        }
+
+        .spacer-small {
+            padding: 0.75em;
+        }
+
+        .btn-thin {
+            background-color: transparent !important;
+            color: #FFF;
+            padding: 1em 1.5em;
+            margin: 1em 1em 1em 0;
+            border: 1px solid #FFF;
+            border-radius: 5px;
+        }
+
+        .btn-thick{
+            background-color: #FFF !important;
+            color: #000;
+            padding: 1em 1.5em;
+            margin: 1em 1em 1em 0;
+            border: 1px solid #FFF;
+            border-radius: 5px;
+        }
+
+        .logo-washout{
+            right: 0;
+            opacity: 0.25;
+            filter: alpha(opacity=25);
+            max-width: 40%;
+            max-height: 175px;
+            position: absolute;
+        }
+
+        /*Typography*/
+        h2 {
+            color: #000;
+            line-height: 0.5em;
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+         
+        p{
+            color: #363636;
+            line-height: 0.5em;
+            font-weight: 100;
+            font-size: 1em;
+        }
+
+        header {
+            margin: 0;
+            background: linear-gradient(#ffffffab,#ffffff00);;
+            text-align: center;
+            height: fit-content;
+            width: 100%;
+            position: absolute;
+        }
+
+        .logo-text {
+            max-width: 50%;
+            margin: 1em 1em;
+            max-height: 3em;
+        }
+
+
+        
+    </style>
+
+<header>
+    <img class="logo-text" src="amphere-text.svg" />
+</header>
+
+<div class="banner">
+    <div class="spacer"></div>
+    <div>
+        <p>MY ACCOUNT</p>
+        <h2>Hey {this.props.name}!</h2>
+        <div class="spacer-small"></div>
+
+        <p>LAST SESSION : 12/12/2018</p>
+        <p><strong>CURRENT SUBTOTAL : &#x20b9; 120</strong></p>
+        <button class="btn-thick">Book Session</button>
+        <button class="btn-thin">Log out</button>
+    </div>
+</div>
 </body>
 
 </html>
